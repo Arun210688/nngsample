@@ -71,49 +71,7 @@ void *server(void *args)
                         fatal("nng_send", rvPub);
 				}
 				free(d);
-				/*
-				//code to publish 8 event data in one shot
-				d= date("s2,");
-				 printf("Server %s: PUBLISHING DATA %s \n",actual_args->topic, d);
-				if ((rvPub = nng_send(PubSock, d, strlen(d) + 1, 0)) != 0) {
-                        fatal("nng_send", rvPub);
-				}
-				free(d);
-				d= date("s3,");
-				 printf("Server %s: PUBLISHING DATA %s \n",actual_args->topic, d);
-				if ((rvPub = nng_send(PubSock, d, strlen(d) + 1, 0)) != 0) {
-				fatal("nng_send", rvPub);
-				}
-				free(d);
-				d= date("s4,");
-				 printf("Server %s: PUBLISHING DATA %s \n",actual_args->topic, d);
-				if ((rvPub = nng_send(PubSock, d, strlen(d) + 1, 0)) != 0) {
-				fatal("nng_send", rvPub);
-				}
-				free(d);
-				d= date("s5,");
-				 printf("Server %s: PUBLISHING DATA %s \n",actual_args->topic, d);
-				if ((rvPub = nng_send(PubSock, d, strlen(d) + 1, 0)) != 0) {
-                        fatal("nng_send", rvPub);
-				}
-				free(d);
-				d= date("s6,");
-				 printf("Server %s: PUBLISHING DATA %s \n",actual_args->topic, d);
-				if ((rvPub = nng_send(PubSock, d, strlen(d) + 1, 0)) != 0) {
-                        fatal("nng_send", rvPub);
-				}
-				free(d);
-				d= date("s7,");
-				 printf("Server %s: PUBLISHING DATA %s \n",actual_args->topic, d);
-				if ((rvPub = nng_send(PubSock, d, strlen(d) + 1, 0)) != 0) {
-                        fatal("nng_send", rvPub);
-				}
-				free(d);
-				d= date("s8,");
-				 printf("Server %s: PUBLISHING DATA %s \n",actual_args->topic, d);
-				if ((rvPub = nng_send(PubSock, d, strlen(d) + 1, 0)) != 0) {
-                        fatal("nng_send", rvPub);
-				}*/
+				
 				usleep(500000);
 				//free(d);
                 }
